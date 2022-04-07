@@ -15,8 +15,6 @@ import { saveBookIds, getSavedBookIds } from "../utils/localStorage";
 
 import Auth from "../utils/auth";
 
-const googleAPI = `https://www.googleapis.com/books/v1/volumes?q=`;
-
 const SearchBooks = () => {
   // create state for holding returned google api data
   const [searchedBooks, setSearchedBooks] = useState([]);
@@ -42,7 +40,9 @@ const SearchBooks = () => {
     }
 
     try {
-      const response = await fetch(`${googleAPI}``${searchInput}`);
+      const response = await fetch(
+        `https://www.googleapis.com/books/v1/volumes?q=${searchInput}`
+      );
 
       if (!response.ok) {
         throw new Error("something went wrong!");
