@@ -40,7 +40,3 @@ HTML | CSS | JavaScript | Node.js | React | Apollo Server | MongoDB
 # Screenshot
 
 ![Screenshot of webpage](./images/homework-readme.png)
-
-# Link
-
-https://booksearchengine31322.herokuapp.com/
